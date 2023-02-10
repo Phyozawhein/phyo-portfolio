@@ -1,0 +1,37 @@
+.navbar{
+    background-color: #000;
+    position: absolute;
+    z-index:3;
+    top:0;
+    height:100%;
+    width:60px;
+    nav{
+        display:block;
+
+        a{
+            display:inline-block;
+            text-decoration:none;
+            color:white;
+            font-family:'Coolvetica','Helvetica Neue', 'san-serif';
+            font-size:30px;
+            margin:10px;
+
+
+            i{
+                transition: all 0.3s ease-out;
+            }
+              &:hover {
+                color: #ffd700;
+                }
+            }
+            svg{
+                opacity:0;
+            }
+      
+    }
+       
+
+        
+    }
+
+
