@@ -1,3 +1,8 @@
+.logo{
+    width:20px;
+    height:auto;
+
+}
 .navbar{
     background-color: #000;
     position: absolute;
@@ -5,33 +10,100 @@
     top:0;
     height:100%;
     width:60px;
+    
     nav{
         display:block;
+        text-align: center;
+        width:100%;
 
         a{
+            position:relative;
             display:inline-block;
             text-decoration:none;
             color:white;
             font-family:'Coolvetica','Helvetica Neue', 'san-serif';
-            font-size:30px;
+            font-size:20px;
             margin:10px;
+            &:after{
+                
+                display:inline-block;
+                width:100%;
+                opacity:0;
+                font-size:12px;
 
+                position:relative;
+                top:-28px;
+                transition: all 0.3s ease-in;
 
-            i{
+                color:#FDD700;
+                
+                }
+            svg{
                 transition: all 0.3s ease-out;
+                
+                }
+
+            &:hover {
+                    svg{
+                        opacity: 0;
+                    }
+                    &:after{
+                        opacity:1;
+                        
+                    }
+                }
+            
+
             }
-              &:hover {
-                color: #ffd700;
+           
+            }
+            a.home-link{
+
+                &:after{
+                    content:'Home';
                 }
             }
-            svg{
-                opacity:0;
+            a.skill-link{
+                &:after{
+                    content:'Skills';
+                }
+            }
+
+            a.proj-link{
+                &:after{
+                    content:'Projects';
+                }
+            }
+            a.contact-link{
+                &:after{
+                    content:'Contact';
+                }
+            }
+            a.active{
+                svg{
+                    color:#FDD700;
+                }
             }
       
     }
-       
+    
+.socials{
+        ul{
+            list-style: none;
+            padding:0;
+            li{
+                svg{
+                color:white;
+                font-size:20px;
+                margin:10px;
+                
+                }
+
+             }
+        }
+    }
 
         
-    }
+    
 
 
