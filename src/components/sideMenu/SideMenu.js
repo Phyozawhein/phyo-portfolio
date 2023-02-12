@@ -9,38 +9,38 @@ import "./SideMenu.scss"
 const SideMenu = ()=>{
     return(
     <div className="navbar">
-        <Link to="/">
-            <img src={Plogo} className="logo" />
+        
+        <Link to="/home"  className="logo"  >
+            <img src={Plogo} />    {
+                // will replace the logo with something more interesting 
+            }
         </Link>
 
         <nav >
-                        <NavLink className="home-link" activeClassName="active"  to='home'>
+                        <NavLink className={({isActive})=> isActive ? "home-link active": "home-link" }  to='home'>
                                     <FontAwesomeIcon icon={faHouse} />
                         </NavLink>
                    
-                        <NavLink className="skill-link" activeClassName="active"  to='skills'>
+                        <NavLink className={({isActive})=> isActive ? "skill-link active": "skill-link" }  to='skills'>
                             <FontAwesomeIcon icon ={faCode}/>
                         </NavLink>
                  
-                        <NavLink className="proj-link" activeClassName="active"  to='projects'>
+                        <NavLink className={({isActive})=> isActive ? "proj-link active": "proj-link" }  to='projects'>
                             <FontAwesomeIcon icon ={faFolder}/>
                         </NavLink>
                     
-                        <NavLink className="contact-link" activeClassName="active"  to='contact'>
+                        <NavLink className={({isActive})=> isActive ? "contact-link active": "contact-link" }  to='contact'>
                             <FontAwesomeIcon icon ={faEnvelope}/>
                         </NavLink>
         </nav>
         <div className="socials">
             <ul>
                 <li>
-                    <a href="https://github.com/Phyozawhein" target="_blank"> <FontAwesomeIcon icon={faGithubAlt} /></a>
+                    <a href="https://github.com/Phyozawhein" target="_blank" className="github-link"> <FontAwesomeIcon icon={faGithubAlt} /></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/phyo-hein-45104b156/" target="_blank"> <FontAwesomeIcon icon={faLinkedinIn} /></a>
+                    <a href="https://www.linkedin.com/in/phyo-hein-45104b156/" target="_blank" className="linkedin-link"> <FontAwesomeIcon icon={faLinkedinIn} /></a>
                 </li>
-                {/* <li>
-                    <a href=""> <FontAwesomeIcon icon={faGithubAlt} /></a>
-                </li> */}
             </ul>
 
         </div>

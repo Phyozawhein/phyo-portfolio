@@ -1,0 +1,27 @@
+.animated-text-hover, .animated-text{
+    font-family:'Coolvetica', 'Helvetica';
+    color:white;
+    font-size:45px;
+    display:inline-block;
+    margin: 0 2.5px;
+}
+
+.animated-text{
+
+    animation:bounceIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.animated-text-hover{
+
+    animation-fill-mode: both;
+   
+    &:hover{
+        color:#fdd700;
+        animation: rubberBand 1s;
+
+    }
+}
+
