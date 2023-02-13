@@ -1,10 +1,30 @@
-.headline{
-    .logoChar{
-        display:inline-block;
-        width:40px;
-        animation-name: fadeIn;
-        animation-fill-mode: forwards;
-        animation-duration:1s;
+.text-area{
 
+    .headline{
+        .logoChar{
+            display:inline-block;
+            width:40px;
+            animation-name: fadeIn;
+            animation-fill-mode: forwards;
+            animation-duration:1s;
+
+        }
+    }
+
+
+
+    h2{
+        color:#bababa;
+        font-size:18px;
+        
+    }
+}
+
+.image-area{
+    display:block;
+    position:relative;
+    left: 15%;
+    svg{
+        display:inline-block;
     }
 }

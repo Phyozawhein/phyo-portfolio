@@ -2,12 +2,13 @@
 
    display:flex;
    
-            
+   
     .page{
         background-color:#008080;
         width:100%;
         height:100%;
-       
+        position:absolute;
+        overflow:hidden;
         
         .tags,.body-tags{  
             position:relative;
@@ -31,6 +32,7 @@
             width:100%;
             position:relative;
             left:120px;
+            // padding:50px;
             .headline{
                 
                 &:before{

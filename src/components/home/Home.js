@@ -2,6 +2,7 @@ import React,{ useState, useEffect }from 'react';
 import './Home.scss'
 import AnimatedLetters from '../animatedLetters/AnimatedLetters.js';
 import Plogo from '../../assets/images/PSolid.png';
+import Avatar from '../../components/avatar/Avatar.js';
 const Home = ()=>{
     let [strClassName,setStrClass] = useState('animated-text')
 
@@ -21,12 +22,12 @@ const Home = ()=>{
                     <img src={Plogo} className="logoChar" />
                     <AnimatedLetters strArray={"hyo Hein ".split('') } strClass={strClassName}/>
                 </span>
-                <h2>
+                <h2 >
                     Web developer / Dev Ops 
                 </h2>
             </div>
             <div className="image-area">
-                <img src={Plogo}/>
+                <Avatar/>
             </div>
 
         </div>
