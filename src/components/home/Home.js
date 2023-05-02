@@ -5,10 +5,11 @@ import Plogo from '../../assets/images/PSolid.png';
 import Avatar from '../../components/avatar/Avatar.js';
 const Home = ()=>{
     let [strClassName,setStrClass] = useState('animated-text')
-
+    let [strLogoName,setLogoClass] = useState('logoChar')
     useEffect(()=>{
         setTimeout(()=>{ 
-            setStrClass('animated-text-hover')
+            setStrClass('animated-text-hover');
+            setLogoClass('logoChar-hover')
         }
     , 2000)
     },[])
@@ -19,12 +20,12 @@ const Home = ()=>{
                 <span className="headline">
                     <AnimatedLetters strArray={"Hi! My name's...".split('') } strClass={strClassName}/>
                     <br/>
-                    <img src={Plogo} className="logoChar" />
+                    <img src={Plogo} className={strLogoName} />
                     <AnimatedLetters strArray={"hyo Hein ".split('') } strClass={strClassName}/>
                 </span>
-                <h2 >
-                    Web developer / Dev Ops 
-                </h2>
+                <h3 >
+                Computer Science Grad / Web developer  / Dev Ops 
+                </h3>
             </div>
             <div className="image-area">
                 <Avatar/>

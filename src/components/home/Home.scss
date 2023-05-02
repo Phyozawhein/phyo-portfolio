@@ -4,13 +4,27 @@
         .logoChar{
             display:inline-block;
             width:40px;
-            animation-name: fadeIn;
+            animation:bounceIn;
+            animation-duration: 1s;
             animation-fill-mode: forwards;
-            animation-duration:1s;
 
         }
+        
+        .logoChar-hover{
+            display:inline-block;
+            width:40px;
+            &:hover{
+                
+                animation: rubberBand 1s;
+                animation-fill-mode:forwards;
+                
+            }
+        }
     }
-    h2{
+    
+    h3{
+        width:350px;
+        overflow-wrap:break-word;
         color:#bababa;
         font-size:18px;
         

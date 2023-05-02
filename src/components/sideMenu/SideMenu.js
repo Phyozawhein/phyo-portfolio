@@ -17,7 +17,7 @@ const SideMenu = ()=>{
         </Link>
 
         <nav >
-                        <NavLink className={({isActive})=> isActive ? "home-link active": "home-link" }  to='home'>
+                        <NavLink className={({isActive})=> isActive ? "home-link active": "home-link" }  to="/">
                                     <FontAwesomeIcon icon={faHouse} />
                         </NavLink>
                    
