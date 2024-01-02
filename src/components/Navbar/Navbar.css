@@ -1,0 +1,39 @@
+.svg-light{
+    color:white
+}
+.svg-dark{
+    color:black
+}
+ .active svg, .active span {
+/* background-color:#e5b367; */
+    color: #e5b367;
+}
+
+.navLink{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 2px;
+    padding:5px 0px;
+}
+.navLabel-light{
+    color:white;
+}
+.navLabel-dark{
+    color:black;
+}
+.navLink svg{
+    width:35px;
+    height:auto;
+}
+.navLink span{
+    opacity: 0%;
+}
+.navLink:hover span{
+    transition:all 0.2s ease-in-out;
+    opacity: 100%;
+}
+.navIcon{
+    width:50px;
+    height:auto
+}

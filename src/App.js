@@ -13,7 +13,7 @@ function App() {
     <div className={`flex flex-row p-5 w-screen h-screen mainbg-${themeColor} justify-between`} >
 
         <nav>
-          <Navbar/>
+          <Navbar themeColor={themeColor}/>
         </nav>
  
       <Routes path="/" element={<Layout/>}>
