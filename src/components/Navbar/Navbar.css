@@ -5,7 +5,7 @@
     color:black
 }
  .active svg, .active span {
-/* background-color:#e5b367; */
+
     color: #e5b367;
 }
 
@@ -23,7 +23,7 @@
     color:black;
 }
 .navLink svg{
-    width:35px;
+    width:30px;
     height:auto;
 }
 .navLink span{
@@ -36,4 +36,8 @@
 .navIcon{
     width:50px;
     height:auto
+}
+
+nav{
+    height:96%
 }
