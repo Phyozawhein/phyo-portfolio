@@ -1,8 +1,3 @@
-# Greetings ! Welcome to my portfolio repo:
-
-My name is Phyo. I am a computer science graduate from CCNY. This portfolio is supposed to replace my old portfolio website (which was built using HTML and CSS) and this project is also to help me brush up my knowledge on React.JS and learning a few new tools such as GSAP.
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
