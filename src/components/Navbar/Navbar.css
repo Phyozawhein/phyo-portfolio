@@ -1,5 +1,5 @@
 .svg-light{
-    color:white
+    color:white;
 }
 .svg-dark{
     color:black
@@ -8,6 +8,7 @@
 
     color: #e5b367;
 }
+
 
 .navLink{
     display:flex;
@@ -41,3 +42,28 @@
 nav{
     height:96%
 }
+
+.light-navbg {
+    background-color: black;
+}
+
+
+.dark-navbg {
+    background-color: white;
+}
+
+
+.themeBtn{
+    display:flex;
+    justify-content: center;
+    margin: 15px 2px;
+    padding:10px 0px;
+
+    
+}
+
+.themeBtn svg{
+    width:30px;
+    height:30px;
+}
+

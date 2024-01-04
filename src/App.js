@@ -10,10 +10,19 @@ import './App.css';
 function App() {
   const [themeColor,setThemeColor] = useState('light')
   
+  const handleThemeColor =()=>{
+    console.log(themeColor)
+    if (themeColor === 'light'){
+      setThemeColor('dark');
+    }
+    else{
+      setThemeColor('light')
+    }
+  }
   return (
     <div className={`flex flex-row px-2 w-screen h-screen mainbg-${themeColor} items-center `} >
 
-      <Navbar themeColor={themeColor}/>
+      <Navbar themeColor={themeColor} handleThemeColor={handleThemeColor}/>
       
  
       <Routes path="/" element={<Layout/>}>

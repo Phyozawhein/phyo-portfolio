@@ -1,32 +1,16 @@
+*{
+    transition-duration: 0.5s;
+    transition-property: background-color, fill;
+    transition-timing-function: ease-in-out;
+}
+
 .mainbg-light{
     background-color: #E5B367;
-
+    color:black;
 }
 
 .mainbg-dark{
     background-color: #000000;
+    color:white;
 }
 
-.secondarybg-light{
-    background-color: #000000;
-}
-
-.secondarybg-dark{
-    background-color: #ffffff;
-}
-
-.icons-light{
-    background-color:#ffffff;
-}
-
-.icons-dark{
-    background-color:#000000;
-}
-
-.icons{
- transition: all 1s ease-in-out;
-}
-
-.icons:hover{
-    background-color:#E5B367;
-}

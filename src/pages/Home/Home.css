@@ -1,6 +1,6 @@
 
 .leftArrow, .rightArrow {
-    width: 30%;
+    max-width: 25%;
     /* transition: all 0.5s ease-in-out; */
     margin:0;
     padding:0;
@@ -29,6 +29,20 @@
 .rightArrow:hover{
     transform: translate(20%,-5%);
     clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%, 0 60%, 32% 49%, 0 37%);
-   
-
 } */
+
+.light .arrow{
+    fill: black;
+}
+
+.light .wall{
+    fill: white;
+}
+
+.dark .arrow{
+    fill: white;
+}
+
+.dark .wall{
+    fill: #E5B367;
+}
