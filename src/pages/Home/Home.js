@@ -1,18 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import anime from 'animejs';
 import './Home.css'
 
 
 const Home =()=>{
 
+    useEffect(()=>{
+        let lArrow = anime.timeline({
+           targets:'.leftArrow',
+           duration:1000
+        })
+        lArrow.add({
+            translateX:'-20%',
+        })
+        lArrow.add({
+            translateY:'-5%',
+            clipPath:'polygon(100% 0%, 0% 40%, 0% 60%, 100% 100%, 100% 61%, 70% 49%, 100% 38%)'
+        })  
+        // right Arrow animation
+        let rArrow = anime.timeline({
+            targets: '.rightArrow',
+            duration:1000
+        })
+        rArrow.add({
+            translateX:'20%',
+        })
+        rArrow.add({
+            translateY:'-5%',
+            clipPath:'polygon(0 0, 100% 40%, 100% 60%, 0 100%, 0 60%, 32% 49%, 0 37%)',
+
+        });
+    },[])
     return(
         <div className="flex flex-row  items-center  w-full ">
-            <div className="flex flex-col w-1/3 items-center">
+            <div className="flex flex-col w-1/2 ">
                 <h1 className="font-bold text-7xl mb-10">
                     Hi, I am Phyo Hein.
                 </h1>
                 <h2 className="font-bold text-5xl mb-10">
-                    Welcome to my portfolio !
+                    Welcome to my portfolio!
                 </h2>
                 <h3 className="font-bold text-2xl">
                     Web developer / Software developer

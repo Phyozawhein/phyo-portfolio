@@ -1,7 +1,7 @@
 
 .leftArrow, .rightArrow {
-    width: 20%;
-    transition: all 1s ease-in-out;
+    width: 30%;
+    /* transition: all 0.5s ease-in-out; */
     margin:0;
     padding:0;
 }
@@ -9,19 +9,19 @@
 /* 1st animation */
 
 .leftArrow{
-    transform: translate(-20%, 5%);
-    clip-path: polygon(100% 0, 0% 40%, 0 40%, 100% 81%, 100% 61%, 46% 40.6%, 100% 20%);
+    /* transform: translate(-20%, 5%); */
+    clip-path: polygon(100% 0, 0% 40%, 0 40%, 100% 81%, 100% 61%, 46% 40.6%, 100% 20%); 
 }
 
 .rightArrow{
-    transform: translate(20%, 5%);
-    clip-path: polygon(0% 0%, 100% 40%, 100% 40%, 0 81%, 0 61%, 53.8% 40.7%, 0 20%);
+    /* transform: translate(20%, 5%); */
+     clip-path: polygon(0% 0%, 100% 40%, 100% 40%, 0 81%, 0 61%, 53.8% 40.7%, 0 20%); 
 
 }
 
 
 /* 2nd animation  */
-.leftArrow:hover {
+/* .leftArrow:hover {
     transform: translate(-20%,-5%);
     clip-path: polygon(100% 0%, 0% 40%, 0% 60%, 100% 100%, 100% 61%, 70% 49%, 100% 38%);
 }
@@ -29,6 +29,6 @@
 .rightArrow:hover{
     transform: translate(20%,-5%);
     clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%, 0 60%, 32% 49%, 0 37%);
-               /* polygon(0 0, 99% 40%, 100% 59%, 0 100%, 0 60%, 30% 49%, 0 37%); */
+   
 
-}
+} */
