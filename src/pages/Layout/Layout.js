@@ -2,9 +2,9 @@ import React from 'react';
 
 const Layout =(props)=>{
 
-    return( <React.Fragment>
+    return(  <div className="flex flex-row  items-center  w-full">
             {props.children}
-            </React.Fragment>)
+            </div>)
 }
 
 export default Layout;

@@ -14,7 +14,7 @@ const Home =({themeColor = 'light'})=>{
         })
         lArrow.add({
             translateX:'-20%',
-            delay:1000
+            delay:1500
         })
         lArrow.add({
             translateY:'-20%',
@@ -27,24 +27,84 @@ const Home =({themeColor = 'light'})=>{
         })
         rArrow.add({
             translateX:'20%',
-            delay:1000
+            delay:1500
         })
         rArrow.add({
             translateY:'-20%',
             clipPath:'polygon(0 0, 100% 40%, 100% 60%, 0 100%, 0 60%, 32% 49%, 0 37%)',
 
         });
+        // animation for titles
+        let titles= anime.timeline({
+            
+            duration:300,
+            easing: 'linear'
+        })
+        titles.add({
+            targets: '.home-t1',
+            keyframes:[
+                {
+                    opacity: '0%',
+                    translateX:'-10%',
+                },
+                {
+                    opacity: '33%',
+                    translateX:'-5%',
+                },
+                {
+                    opacity: '100%',
+                    translateX:'0%',
+                }
+            ]
+            
+            })
+        titles.add({
+                targets: '.home-t2',
+                keyframes:[
+                    {
+                        opacity: '0%',
+                        translateX:'-10%',
+                    },
+                    {
+                        opacity: '33%',
+                        translateX:'-5%',
+                    },
+                    {
+                        opacity: '100%',
+                        translateX:'0%',
+                    }
+                ]
+               
+        })
+        titles.add({
+            targets: '.home-t3',
+            keyframes:[
+                {
+                    opacity: '0%',
+                    translateX:'-10%',
+                },
+                {
+                    opacity: '33%',
+                    translateX:'-5%',
+                },
+                {
+                    opacity: '100%',
+                    translateX:'0%',
+                }
+            ]
+            
+        })
     },[])
     return(
-        <div className="flex flex-row  items-center  w-full">
+            <React.Fragment>
             <div className="flex flex-col w-10/12 ml-10">
-                <h1 className="font-bold text-7xl mb-10">
+                <h1 className="font-bold text-7xl mb-10 home-t1">
                     Hi, I am Phyo Hein
                 </h1>
-                <h2 className="font-bold text-5xl mb-10">
+                <h2 className="font-bold text-5xl mb-10 home-t2">
                     Welcome to my portfolio!
                 </h2>
-                <h3 className="font-bold text-2xl">
+                <h3 className="font-bold text-2xl home-t3">
                     Web developer / Software developer
                 </h3>
             </div>
@@ -63,7 +123,7 @@ const Home =({themeColor = 'light'})=>{
                 </svg> 
             
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 
