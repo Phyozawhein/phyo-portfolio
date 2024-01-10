@@ -14,7 +14,7 @@ function App() {
   const [themeColor,setThemeColor] = useState('light')
   
   const handleThemeColor =()=>{
-    console.log(themeColor)
+
     if (themeColor === 'light'){
       setThemeColor('dark');
     }
@@ -23,7 +23,7 @@ function App() {
     }
   }
   return (
-    <div className={`flex flex-row px-2 w-screen h-screen mainbg-${themeColor} items-center `} >
+    <div className={`flex  px-2 w-screen h-screen mainbg-${themeColor} items-center `} >
 
       <Navbar themeColor={themeColor} handleThemeColor={handleThemeColor}/>
       
@@ -34,6 +34,7 @@ function App() {
           <Route path="skill"  element={<Skill themeColor={themeColor}/>}/>
           <Route path="projects" element={<Project themeColor={themeColor}/>}/>
       </Routes>
+    
     </div>
   );
 }

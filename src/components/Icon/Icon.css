@@ -1,0 +1,21 @@
+.icon, .icon path {
+   width:50px;
+   margin: 0 10px ;
+   transition: fill 0.3s ease-in-out;
+}
+
+.icon-light path{
+    
+    fill:black;
+}
+.icon-dark path{
+    fill:white;
+}
+
+.icon-light:hover path{
+    fill: white;
+}
+
+.icon-dark:hover path{
+    fill: #E5B367;
+}
