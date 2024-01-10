@@ -5,15 +5,15 @@
     fill:#E5B367;
 }
 
- .exp-avatar-bg svg{
+ .exp-avatar-bg {
     position:absolute;
     max-width:30%;
-    /* transform: translate(0%, -50%); */
+  
 }
 
 .exp-avatar{
     position:absolute;
-    width:40%;
+    width:20%;
     height:auto;
  
 }

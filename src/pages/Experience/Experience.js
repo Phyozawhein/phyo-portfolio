@@ -3,7 +3,7 @@ import avatar from '../../assets/images/avatar.svg';
 import anime from 'animejs';
 import Button from '../../components/Button/Button';
 import Icon from '../../components/Icon/Icon';
-import expIcon from '../../assets/images/expIcon.svg';
+
 import PDFfile from '../../assets/files/PHYO_ZAW_HEIN_RESUME.pdf';
 import './Experience.css';
 const Experience =({themeColor})=>{
@@ -20,11 +20,14 @@ const Experience =({themeColor})=>{
 
                 {
                     opacity:'0%',
-                    translateX:'50%'
+                    translateX:'50%',
+                    translateY:'-70%'
+          
                 },
                 {
                     opacity:'100%',
-                    translateX:'0%'
+                    translateX:'0%',
+                    translateY:'-70%'
                 }
             ]
         })
@@ -36,12 +39,12 @@ const Experience =({themeColor})=>{
                 {
                     opacity:'0%',
                     translateX:'10%',
-                    translateY:'-3%',
+                    translateY:'-61%',
                 },
                 {
                     opacity:'100%',
                     translateX:'0%',
-                    translateY:'-3%',
+                    translateY:'-61%',
                 }
             ]
         })
