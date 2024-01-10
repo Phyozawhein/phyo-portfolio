@@ -1,7 +1,20 @@
-.icon, .icon path {
+.icon{
+    margin: 0  15px 0 0px;
+
+}
+.icon svg {
    width:50px;
-   margin: 0 10px ;
-   transition: fill 0.3s ease-in-out;
+   height:50px;
+}
+
+
+
+.icon-light span{
+    color:black;
+}
+
+.icon-dark span{
+    color:white;
 }
 
 .icon-light path{
@@ -12,10 +25,12 @@
     fill:white;
 }
 
-.icon-light:hover path{
+.icon-light:hover *{
     fill: white;
+    color:white;
 }
 
-.icon-dark:hover path{
+.icon-dark:hover *{
     fill: #E5B367;
+    color: #E5B367;
 }
