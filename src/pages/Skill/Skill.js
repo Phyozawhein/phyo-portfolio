@@ -1,10 +1,31 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import anime from 'animejs';
 import Section from '../../components/Section/Section';
 import Icon from '../../components/Icon/Icon';
+
 const Skill =({themeColor})=>{
+    useEffect(()=>{
+        let skillAnimations= anime.timeline({
+            duration: 1000,
+            easing:'linear',
+            delay:anime.stagger(500)
+        })
+        skillAnimations.add({
+            targets: '.skill-section a, .skill-section button',
+            keyframes:[
+                {
+                    opacity:'0%',
+                    translateX:'-100%'
+                },
+                {
+                    opacity:'100%',
+                    translateX:'0%'
+                }
+            ]
+        })
+    },[])
     return (
-            <div className="flex flex-col items-center w-full pr-5">
+            <div className="flex flex-col items-center w-full pr-5 skill-section">
                 <Section title="Programming Language" themeColor={themeColor} >
                     <Icon  themeColor={themeColor} className="flex flex-col items-center"  >
                         <svg viewBox="0 0 37 33"  xmlns="http://www.w3.org/2000/svg">
