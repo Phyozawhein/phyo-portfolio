@@ -1,0 +1,10 @@
+.project-dashboard li{
+    max-width:350px;
+}
+.project-item-links svg{
+    width:45px;
+    margin: 0 5px;
+    padding: 5px;
+    border: solid 1px;
+    border-radius:30px;
+}

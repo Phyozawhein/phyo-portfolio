@@ -6,7 +6,7 @@ import Icon from '../../components/Icon/Icon';
 const Skill =({themeColor})=>{
     useEffect(()=>{
         let skillAnimations= anime.timeline({
-            duration: 1000,
+            duration: 500,
             easing:'linear',
             delay:anime.stagger(500)
         })

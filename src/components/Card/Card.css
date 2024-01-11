@@ -1,0 +1,36 @@
+.card{
+    min-width:300px;
+    min-height:150px;
+
+}
+
+
+.project-links svg{
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px;
+    border-radius: 30%;
+}
+
+
+
+.card-dark,.card-light{
+    transition-property:  box-shadow;
+    transition:  0.2s ease-in-out;
+    
+}
+
+.card-light {
+    border-color: black
+}
+.card-light:hover{
+    box-shadow: 10px 10px black;
+}
+
+
+.card-dark {
+    border-color: white;
+}
+.card-dark:hover{
+    box-shadow: 10px 10px #E5B367;
+}
