@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/phyo-portfolio/static/css/main.3515d79e.css",
+    "main.js": "/phyo-portfolio/static/js/main.d5696b73.js",
+    "static/js/787.e9cf6406.chunk.js": "/phyo-portfolio/static/js/787.e9cf6406.chunk.js",
+    "static/media/Inter-Regular.ttf": "/phyo-portfolio/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/PHYO_ZAW_HEIN_RESUME.pdf": "/phyo-portfolio/static/media/PHYO_ZAW_HEIN_RESUME.ec2bc19e136942be7ed9.pdf",
+    "static/media/avatar.svg": "/phyo-portfolio/static/media/avatar.43e6cf43ff8b48e486ae5f053a05f23e.svg",
+    "static/media/logo.svg": "/phyo-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/phyo-portfolio/index.html",
+    "main.3515d79e.css.map": "/phyo-portfolio/static/css/main.3515d79e.css.map",
+    "main.d5696b73.js.map": "/phyo-portfolio/static/js/main.d5696b73.js.map",
+    "787.e9cf6406.chunk.js.map": "/phyo-portfolio/static/js/787.e9cf6406.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3515d79e.css",
+    "static/js/main.d5696b73.js"
+  ]
+}
