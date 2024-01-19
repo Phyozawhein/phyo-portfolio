@@ -97,8 +97,8 @@ const Home =({themeColor = 'light'})=>{
     },[])
     return(
             <React.Fragment>
-            <div className="flex flex-col w-10/12 ml-10">
-                <h1 className="font-bold text-7xl mb-10 home-t1">
+            <div className="flex flex-col w-10/12 ml-10 home-text">
+                <h1 className="font-bold text-7xl mb-10 home-t1 ">
                     Hi, I am Phyo Hein
                 </h1>
                 <h2 className="font-bold text-5xl mb-10 home-t2">
@@ -108,7 +108,7 @@ const Home =({themeColor = 'light'})=>{
                     Web developer / Software developer
                 </h3>
             </div>
-            <div className="flex flex-row w-full justify-center devLogo">
+            <div className="flex flex-row w-full justify-center devLogo max">
             
                 <svg className={`leftArrow ${themeColor}`}   viewBox="0 0 106 185" fill="" xmlns="http://www.w3.org/2000/svg">
                     <path  className="wall" d="M45 77L106 37V69.5L45 112V77Z" />

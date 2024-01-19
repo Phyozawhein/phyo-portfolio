@@ -47,3 +47,33 @@
 .dark .wall{
     fill: #E5B367;
 }
+/* @media screen and (max-width: 599px){
+    h1{
+        font-size:1.85rem !important;
+    }
+    h2{
+        font-size:1.5rem !important;
+    }
+    h3{
+        font-size:1rem !important;
+    }
+    .devLogo{
+        visibility: hidden;
+    }
+    .home-text *{
+        width:100% !important
+    }
+}
+
+@media screen and  (min-width: 600px)  and (max-width: 800px) { 
+    h1{
+        font-size:2.5rem !important;
+    }
+    h2{
+        font-size:1.5rem !important;
+    }
+    h3{
+        font-size:1rem !important;
+    }
+}
+ */

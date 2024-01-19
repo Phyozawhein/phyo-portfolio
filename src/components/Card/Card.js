@@ -43,7 +43,7 @@ const Card = ({themeColor, title ,tech, description ,gitHublink, website, classN
     )
     return(
             <div 
-                className={`border-2 m-2 p-2 card-${themeColor} flex flex-col text-center justify-center items-center card` } 
+                className={`border-2 m-2 p-1 card-${themeColor} flex flex-col text-center justify-center items-center card` } 
                 onMouseOver={()=>handleHover(true)}
                 onMouseOut={()=>handleHover(false)}
                 >
