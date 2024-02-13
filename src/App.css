@@ -3,6 +3,14 @@
     transition-property: background-color, fill,color;
     transition-timing-function: ease-in-out;
 }
+.mainbg{
+    display:flex;
+    position:absolute;
+    align-items: center;
+    height:100%;
+    width:100%;
+
+}
 
 .mainbg-light{
     background-color: #E5B367;
@@ -14,3 +22,6 @@
     color:white;
 }
 
+@media screen and (max-width:599px){
+
+}

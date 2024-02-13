@@ -4,8 +4,12 @@
 .dark {
     fill:#E5B367;
 }
+.exp-section{
+ display:flex;
+ flex-direction: row;
+}
 
- .exp-avatar-bg {
+.exp-avatar-bg {
     position:absolute;
     max-width:30%;
   
@@ -16,4 +20,37 @@
     width:20%;
     height:auto;
  
+}
+.exp-text-section{
+    flex-direction: column;
+    margin-left:2.5rem;
+    width:83.33%;
+}
+.exp-text{
+    margin-bottom:1.25rem;
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+}
+
+.exp-contact-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:83.33%
+}
+
+@media screen and (max-width:599px){
+    .exp-section{
+        flex-direction: column-reverse;
+        width:100%;
+        margin:0;
+    }
+    .exp-contact-section{
+        width:100%;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+   .exp-dev-logo{
+    display:none;
+   }
 }

@@ -24,7 +24,7 @@ function App() {
   }
   return (
 
-    <div className={`flex  px-2 w-screen h-screen mainbg-${themeColor} items-center `} >
+    <div className={`mainbg  px-2  mainbg-${themeColor}  `} >
 
       <Navbar themeColor={themeColor} handleThemeColor={handleThemeColor}/>
       

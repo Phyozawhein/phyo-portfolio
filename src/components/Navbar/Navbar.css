@@ -8,7 +8,15 @@
 
     color: #e5b367;
 }
-
+.menu-light{
+    color:black;
+}
+.menu-dark{
+    color:white;
+}
+.mobile-nav{
+    display:none;
+}
 
 .navLink{
     display:flex;
@@ -67,3 +75,23 @@ nav{
     height:30px;
 }
 
+@media screen and (max-width:599px){
+    .non-mobile-nav{
+        display: none;
+    }
+    .mobile-nav{
+        position: absolute;
+        display:inline-block;
+       
+        z-index:1;
+    } 
+    .menu-icon {
+        width:30px;
+        height:30px;
+    }
+
+    .navLink span{
+        opacity:100%;
+    }
+
+}

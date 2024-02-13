@@ -1,7 +1,34 @@
+.home-section{
+    display:flex;
+    flex-direction:row;
+ 
+}
+.home-t1{
+    font-size:4.5rem;
+    line-height:1;
+}
+.home-t2{
+    font-size: 3rem/* 48px */;
+    line-height: 1;
+}
+.home-t3{
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */
+}
+
+.home-t1,.home-t2,.home-t3{
+    font-weight:bold;
+}
+.home-t1, .home-t2{
+    margin-bottom: 2.5rem;
+    
+}
+.home-text{
+    margin-left:1rem;
+}
 
 .leftArrow, .rightArrow {
-    max-width: 25%;
-    /* transition: all 0.5s ease-in-out; */
+    max-width: 35%;
     margin:0;
     padding:0;
 }
@@ -18,7 +45,6 @@
      clip-path: polygon(0% 0%, 100% 40%, 100% 40%, 0 81%, 0 61%, 53.8% 40.7%, 0 20%); 
 
 }
-
 
 
 /* 2nd animation  */
@@ -47,33 +73,33 @@
 .dark .wall{
     fill: #E5B367;
 }
-/* @media screen and (max-width: 599px){
-    h1{
-        font-size:1.85rem !important;
+
+.devLogo{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: end;
+    align-items: center;
+}
+ @media screen and (max-width: 599px){
+    .home-section{
+        flex-direction:column-reverse;
+        justify-content: center;
     }
-    h2{
-        font-size:1.5rem !important;
+    .home-text{
+        width:100% ;
     }
-    h3{
-        font-size:1rem !important;
+    .home-t1{
+        font-size:3rem 
+    }
+    .home-t2{
+        font-size:2rem 
+    }
+    .home-t3{
+        font-size:1rem 
     }
     .devLogo{
-        visibility: hidden;
+      justify-content: center;
     }
-    .home-text *{
-        width:100% !important
-    }
-}
 
-@media screen and  (min-width: 600px)  and (max-width: 800px) { 
-    h1{
-        font-size:2.5rem !important;
-    }
-    h2{
-        font-size:1.5rem !important;
-    }
-    h3{
-        font-size:1rem !important;
-    }
 }
- */
